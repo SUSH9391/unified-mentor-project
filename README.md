@@ -1,0 +1,1 @@
+I carried a project work when I was going through the internship with unified-mentor under the domain machine learning-industry training as project work I had selected heart disease prediction with an objective of - Build a system that can predict if a patient has heart disease. with the given datasets and parameters 
