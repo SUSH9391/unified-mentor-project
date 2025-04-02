@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Heart Disease Prediction</title>
+  </head>
+  <body>
+    <h2>Heart Disease Prediction</h2>
+    <form action="/predict" method="post">
+      <label>Age (20-100):</label>
+      <input type="number" name="age" min="20" max="100" required /><br />
+      <label>Sex (0=Female, 1=Male):</label>
+      <input type="number" name="sex" min="0" max="1" required /><br />
+      <label>Chest Pain Type (0-3):</label>
+      <input type="number" name="cp" min="0" max="3" required /><br />
+      <label>Resting Blood Pressure (80-200):</label>
+      <input type="number" name="trestbps" min="80" max="200" required /><br />
+      <label>Cholesterol (100-600):</label>
+      <input type="number" name="chol" min="100" max="600" required /><br />
+      <label>Fasting Blood Sugar (0=False, 1=True):</label>
+      <input type="number" name="fbs" min="0" max="1" required /><br />
+      <label>Rest ECG (0-2):</label>
+      <input type="number" name="restecg" min="0" max="2" required /><br />
+      <label>Max Heart Rate Achieved (60-220):</label>
+      <input type="number" name="thalach" min="60" max="220" required /><br />
+      <label>Exercise-Induced Angina (0=No, 1=Yes):</label>
+      <input type="number" name="exang" min="0" max="1" required /><br />
+      <label>ST Depression (0.0-6.2):</label>
+      <input
+        type="number"
+        name="oldpeak"
+        min="0"
+        max="6.2"
+        step="0.1"
+        required
+      /><br />
+      <label>Thalassemia Type (0-3):</label>
+      <input type="number" name="thal" min="0" max="3" required /><br />
+      <button type="submit">Predict</button>
+    </form>
+    <h3>{{ prediction_text }}</h3>
+    {% if plot_url %}
+    <img src="data:image/png;base64,{{ plot_url }}" alt="Comparison Graph" />
+    {% endif %}
+  </body>
+</html>
