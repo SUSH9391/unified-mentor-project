@@ -43,6 +43,6 @@ The app will ask for medical information such as age, cholesterol, and blood pre
 🚀 **Stay healthy and use AI for good!**
 
 ## Acknowledgment
--I thank Unified Mentors for providing me a wonderful oppurtunity to pursue internship in the field of Machine Learning getting me industry ready. 
--I sucessfully completed building this full-fledged website and training an SVM model. 
--Looking forward for more such oppurtunities.
+- I thank Unified Mentors for providing me a wonderful oppurtunity to pursue internship in the field of Machine Learning getting me industry ready.
+- I sucessfully completed building this full-fledged website and training an SVM model.
+- Looking forward for more such oppurtunities.
